@@ -35,6 +35,29 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'de.flapdoodle.embed:de.flapdoodle.embed.mongo'
     testImplementation 'org.springframework.amqp:spring-rabbit-test'
+    implementation('org.modelmapper:modelmapper:2.3.0')
+    // https://mvnrepository.com/artifact/org.json/json
+    implementation group: 'org.json', name: 'json', version: '20201115'
+    // https://mvnrepository.com/artifact/org.mockito/mockito-core
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '3.11.2'
+    // testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+    // testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
+    implementation('org.springframework.boot:spring-boot-starter-validation')
+    // https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui
+    // implementation group: 'io.springfox', name: 'springfox-swagger2', version: '3.0.0'
+    // // https://mvnrepository.com/artifact/io.springfox/springfox-boot-starter
+    // implementation group: 'io.springfox', name: 'springfox-boot-starter', version: '3.0.0'
+    // // https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui
+    // implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '3.0.0'
+    // // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security
+    // implementation group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.5.2'
+    // implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    // // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-parent
+    // implementation group: 'org.springframework.boot', name: 'spring-boot-starter-parent', version: '2.3.0.RELEASE', ext: 'pom'
+
+
+
+
 }
 
 // Helps faster load times in Crio workspace.

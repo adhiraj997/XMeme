@@ -4,8 +4,11 @@
 
 package com.crio.starter;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Scope;
 
 @SpringBootApplication
 public class App {
@@ -13,4 +16,20 @@ public class App {
   public static void main(String[] args) {
     SpringApplication.run(App.class, args);
   }
+
+
+  @Bean // Want a new obj every time
+  @Scope("prototype")
+  public ModelMapper modelMapper() {
+    return new ModelMapper();
+  }
+
+  // @Bean
+  // public Docket api() {
+  //   return new Docket(DocumentationType.SWAGGER_2)
+  //     .select()
+  //     .apis(RequestHandlerSelectors.any())
+  //     .paths(PathSelectors.any())
+  //     .build();
+  // }
 }

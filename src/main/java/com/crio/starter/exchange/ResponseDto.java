@@ -1,15 +1,19 @@
 package com.crio.starter.exchange;
 
+import com.crio.starter.dto.Meme;
+import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+
 
 @Data
 @AllArgsConstructor
-@EqualsAndHashCode
 @NoArgsConstructor
 public class ResponseDto {
 
-  private String message;
+  //there from before
+  //private String message;
+
+  List<Meme> memes;
 }
